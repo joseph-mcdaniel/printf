@@ -6,9 +6,9 @@
  *
  * Return: void
  */
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
-	int len;
+	unsigned int len;
 
 	len = 0;
 
