@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 		{
 			chars = _convert(format[++i], arguments, chars);
 			if (chars == 0)
-				return (NULL);
+				return (0);
 		}
 	}
 	return (chars);

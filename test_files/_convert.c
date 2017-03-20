@@ -23,12 +23,8 @@ unsigned int _convert(char a, va_list args, unsigned int chars)
 			chars = _puts(tmp, chars);
 			break;
 	case 'i':
-		chars += _puts(va_arg(args, int));
-		if (chars < 0)
-		{
-			chars = -chars;
-			_puts('-');
-		}
+		chars += _putchar(va_arg(args, int));
+		print_number(va_arg(args, int));
 		break;
 
 		default:
