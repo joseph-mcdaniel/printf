@@ -1,6 +1,9 @@
 #include "holberton.h"
 /**
 * _printf - writes formatted output
+* @format: list of arguments
+*
+* Return: number of characters
 */
 int _printf(const char *format, ...)
 {
@@ -18,10 +21,7 @@ int _printf(const char *format, ...)
 			continue;
 		}
 		else
-		{
-			_convert(format[++i], arguments);
-			chars += 2;
-		}
+			chars = _convert(format[++i], arguments, chars);
 	}
 	return (chars);
 }
