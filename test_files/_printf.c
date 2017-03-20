@@ -21,7 +21,11 @@ int _printf(const char *format, ...)
 			continue;
 		}
 		else
+		{
 			chars = _convert(format[++i], arguments, chars);
+			if (chars == 0)
+				return (NULL);
+		}
 	}
 	return (chars);
 }
