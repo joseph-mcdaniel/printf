@@ -14,8 +14,7 @@ unsigned int _convert(char a, va_list args, unsigned int chars)
 	switch (a)
 	{
 		case 'c':
-			_putchar(va_arg(args, int));
-			chars++;
+			chars += _putchar(va_arg(args, int));
 			break;
 		case 's':
 			tmp = va_arg(args, char *);
@@ -23,10 +22,15 @@ unsigned int _convert(char a, va_list args, unsigned int chars)
 				return (0);
 			chars = _puts(tmp, chars);
 			break;
-		case '%':
-			_putchar('%');
-			chars++;
-			break;
+	case 'i':
+		chars += _puts(va_arg(args, int));
+		if (chars < 0)
+		{
+			chars = -chars;
+			_puts('-');
+		}
+		break;
+
 		default:
 			_putchar(a);
 			chars++;
