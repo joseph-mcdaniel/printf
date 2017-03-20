@@ -23,10 +23,13 @@ unsigned int _convert(char a, va_list args, unsigned int chars)
 			chars = _puts(tmp, chars);
 			break;
 	case 'i':
-		chars += _putchar(va_arg(args, int));
 		print_number(va_arg(args, int));
+		chars++;
 		break;
-
+	case 'd':
+		print_number(va_arg(args, int));
+		chars++;
+		break;
 		default:
 			_putchar(a);
 			chars++;
