@@ -6,7 +6,7 @@
 *
 * Return: number of characters
 */
-int _puts(char *str, unsigned int chars)
+unsigned int _puts(char *str, unsigned int chars)
 {
 	unsigned int index;
 

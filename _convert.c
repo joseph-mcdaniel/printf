@@ -7,7 +7,7 @@
 *
 * Return: number of characters
 */
-int _convert(char a, va_list args, unsigned int chars)
+unsigned int _convert(char a, va_list args, unsigned int chars)
 {
 	char *tmp;
 
