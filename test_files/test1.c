@@ -6,12 +6,13 @@
  */
 int main(void)
 {
-	int x;
+	int x, i;
 
-	x = 42;
+	x = 5;
+	i = 42;
 
-	_printf("String: [%s]\n", "Hello World");
 	_printf("%i\n", x);
+	_printf("%d\n", i);
 
 	return (0);
 }
