@@ -10,4 +10,5 @@ unsigned int _convert(char a, va_list args, unsigned int chars);
 unsigned int _puts(char *str, unsigned int chars);
 unsigned int _strlen(char *s);
 unsigned int digit_count(int);
+char *rot13(char *s);
 #endif
