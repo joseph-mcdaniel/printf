@@ -31,7 +31,7 @@ unsigned int _convert(char a, va_list args, unsigned int chars)
 		case 'd':
 			d = va_arg(args, int);
 			chars += digit_count(d);
-			print_number(va_arg(args, int));
+			print_number(d);
 			break;
 		case 'r':
 			tmp = va_arg(args, char *);
