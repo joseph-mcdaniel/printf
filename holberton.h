@@ -9,4 +9,5 @@ void print_number(int n);
 unsigned int _convert(char a, va_list args, unsigned int chars);
 unsigned int _puts(char *str, unsigned int chars);
 unsigned int _strlen(char *s);
+unsigned int digit_count(int);
 #endif

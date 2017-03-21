@@ -10,6 +10,7 @@
 unsigned int _convert(char a, va_list args, unsigned int chars)
 {
 	char *tmp;
+	unsigned int d;
 
 	switch (a)
 	{
@@ -22,15 +23,17 @@ unsigned int _convert(char a, va_list args, unsigned int chars)
 				return (0);
 			chars += _puts(tmp, chars);
 			break;
-		case 'i':
-			print_number(va_arg(args, int));
-			chars++;
+	        case 'i':
+			d = va_arg(args, int);
+			chars += digit_count(d);
+			print_number(d);
 			break;
-		case 'd':
-			print_number(va_arg(args, int));
-			chars++;
+	        case 'd':
+			d = va_arg(args, int);
+			chars += digit_count(d);
+	        	print_number(va_arg(args, int));
 			break;
-		default:
+	        default:
 			chars += _putchar(a);
 			break;
 	}
