@@ -28,5 +28,5 @@ void print_number(int n)
 		_putchar('-');
 		n = -n;
 	}
-	print_unum((unsigned int) n);
+	print_unum((int) n);
 }
