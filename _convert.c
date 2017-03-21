@@ -33,6 +33,13 @@ unsigned int _convert(char a, va_list args, unsigned int chars)
 			chars += digit_count(d);
 			print_number(va_arg(args, int));
 			break;
+		case 'r':
+			tmp = va_arg(args, char *);
+			if (tmp == NULL)
+				return (0);
+			chars += _strlen(tmp);
+			rev_string(tmp);
+			break;
 		default:
 			chars += _putchar(a);
 			break;
