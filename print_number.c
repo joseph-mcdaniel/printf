@@ -7,7 +7,7 @@
  */
 
 
-void print_unum(unsigned int n)
+void print_unum(int n)
 {
 	if (n / 10 != 0)
 		print_number(n / 10);
