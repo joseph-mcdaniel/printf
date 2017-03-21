@@ -11,5 +11,5 @@ unsigned int _puts(char *str, unsigned int chars)
 {
 	chars = _strlen(str);
 
-	return(write(1, str, chars));
+	return (write(1, str, chars));
 }
