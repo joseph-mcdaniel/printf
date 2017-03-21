@@ -17,6 +17,6 @@ char *rot13(char *s)
 			s[i] -= 13;
 
 	}
-	_puts(s);
-	return (i);
+	_puts(s, i);
+	return (1);
 }
