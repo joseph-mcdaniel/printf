@@ -20,19 +20,18 @@ unsigned int _convert(char a, va_list args, unsigned int chars)
 			tmp = va_arg(args, char *);
 			if (tmp == NULL)
 				return (0);
-			chars = _puts(tmp, chars);
+			chars += _puts(tmp, chars);
 			break;
-	case 'i':
-		print_number(va_arg(args, int));
-		chars++;
-		break;
-	case 'd':
-		print_number(va_arg(args, int));
-		chars++;
-		break;
-		default:
-			_putchar(a);
+	        case 'i':
+			print_number(va_arg(args, int));
 			chars++;
+			break;
+	        case 'd':
+	        	print_number(va_arg(args, int));
+			chars++;
+			break;
+	        default:
+			chars += _putchar(a);
 			break;
 	}
 	return (chars);
