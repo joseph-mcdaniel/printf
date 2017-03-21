@@ -23,17 +23,17 @@ unsigned int _convert(char a, va_list args, unsigned int chars)
 				return (0);
 			chars += _puts(tmp, chars);
 			break;
-	        case 'i':
+		case 'i':
 			d = va_arg(args, int);
 			chars += digit_count(d);
 			print_number(d);
 			break;
-	        case 'd':
+		case 'd':
 			d = va_arg(args, int);
 			chars += digit_count(d);
-	        	print_number(va_arg(args, int));
+			print_number(va_arg(args, int));
 			break;
-	        default:
+		default:
 			chars += _putchar(a);
 			break;
 	}
