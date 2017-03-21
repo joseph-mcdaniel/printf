@@ -11,6 +11,9 @@ int _printf(const char *format, ...)
 	int i;
 	unsigned int chars = 0;
 
+	if (format == NULL)
+		return (-1);
+
 	va_start(arguments, format);
 	for (i = 0; format[i] != '\0'; i++)
 	{
