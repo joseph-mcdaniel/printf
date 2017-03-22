@@ -1,7 +1,8 @@
-# Create printf function
-## Intro:
-Program created to emulate printf
-### Function Macros utilized:
+## _printf function
+### Introduction:
+* _printf - fomratted output conversion
+* Program created to emulate printf
+#### Function Macros utilized:
 * write
 * malloc
 * free
@@ -17,12 +18,12 @@ Compilation:
 Header:
 * Prototypes of functions will be stored in holberton.h
 
-## File Description:
+### File Description:
 * _convert.c - Function that prints argument based on conversion specifier -
 variadic function with switch case statement for each type (s, c, i, etc.)
 * _printf.c - Function that writes formatted output - variadic function that
 calls _convert function.
-### Helper Functions:
+#### Helper Functions:
 * binary.c - Converts decimal to binary
 * digit-count.c - Counts the numberof chars in a digit
 * print_number.c - Prints integer
