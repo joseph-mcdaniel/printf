@@ -21,7 +21,7 @@ void print_unum(unsigned int n)
  *
  * Return: void
  */
-void print_number(long int n)
+void print_number(long long n)
 {
 	if (n < 0)
 	{
