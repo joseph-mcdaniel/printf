@@ -40,9 +40,13 @@ unsigned int _convert(char a, va_list args, unsigned int chars)
 			chars += _strlen(tmp);
 			rev_string(tmp);
 			break;
+		case 'b':
+			d = va_arg(args, unsigned int);
+			chars += digit_count(binary(d));
+			print_number(binary(d));
+			break;
 		default:
 			chars += _putchar(a);
-			break;
 	}
 	return (chars);
 }
