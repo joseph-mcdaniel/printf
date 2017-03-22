@@ -21,10 +21,9 @@ int _printf(const char *format, ...)
 		{
 			_putchar(format[i]);
 			chars++;
-			continue;
 		}
 		else
-			chars = _convert(format[++i], arguments, chars);
+			_convert(format[++i], arguments, chars);
 	}
 	return (chars);
 }
