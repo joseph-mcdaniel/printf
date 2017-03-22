@@ -31,3 +31,5 @@ calls _convert function.
 * _puts.c - Prints a string
 * rev_string.c - Print string in reverse
 * strlen.c - Return length of string
+### Collaborators
+Jared Heck, Joe McDaniel
