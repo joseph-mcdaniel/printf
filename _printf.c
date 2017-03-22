@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 			chars++;
 		}
 		else
-			_convert(format[++i], arguments, chars);
+			chars = _convert(format[++i], arguments, chars);
 	}
 	return (chars);
 }
