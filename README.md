@@ -1,6 +1,6 @@
-## _printf function
+## _printf
 ### Introduction:
-* _printf - fomratted output conversion
+* _printf - formatted output conversion
 * Program created to emulate printf
 #### Function Macros utilized:
 * write
