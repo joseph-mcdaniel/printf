@@ -7,8 +7,7 @@
 */
 unsigned int binary(unsigned int num)
 {
-	int rem;
-	int bin = 0, place = 1;
+	unsigned int bin = 0, place = 1, rem;
 
 	while (num != 0)
 	{
